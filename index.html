@@ -1,0 +1,102 @@
+<!-- Mahmoud Hewidy - 225104360 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud Hewidy | Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="site-title">Mahmoud Hewidy</h1>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button id="theme-btn" type="button" aria-label="Toggle dark mode">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about-box">
+            <img src="images/me.jpg" alt="Photo of Mahmoud Hewidy" class="profile-photo">
+            <div class="about-info">
+                <h2>Automation &amp; AI Agent Developer</h2>
+                <p>Computer Science student at New Mansoura University and DEPI Software Testing trainee focused on reliable workflow automation, bilingual web applications, and test coverage.</p>
+                <p class="about-links">
+                    <a href="https://hewidyy.github.io" target="_blank" rel="noopener noreferrer">Portfolio</a>
+                    <a href="https://github.com/hewidyy" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Skills &amp; Education</h2>
+            <div class="skills-row">
+                <article class="skill-card">
+                    <h3>Automation &amp; AI Agents</h3>
+                    <p>Building Make.com and n8n workflows, idempotent webhook pipelines, REST API integrations, and policy-grounded support agents.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Web Development &amp; Testing</h3>
+                    <p>Developing bilingual React, TypeScript, HTML, CSS, and JavaScript interfaces with protected routes, backed by Playwright browser checks and unit and component tests.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Education &amp; Training</h3>
+                    <p>B.Sc. Computer Science at New Mansoura University (2025 &ndash; 2029) and the DEPI Software Testing track with Global Knowledge, plus Make Foundation certification.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-box">
+            <div class="contact-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="contact-subtitle">Leave your name and email.</p>
+            </div>
+            <form id="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <input type="text" id="name" name="name" placeholder="Your full name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <input type="email" id="email" name="email" placeholder="you@example.com">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <p id="hello-line" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mahmoud Hewidy. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
